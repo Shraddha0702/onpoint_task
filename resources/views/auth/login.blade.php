@@ -104,17 +104,19 @@
     <div class="form-group">
     <label for="email">Email</label><br>
     <input type="email" placeholder="Enter Email" name=email value="{{old('email')}}">
-    <span class="text-danger">@error('email'){{$message}}@enderror</span>
+    
     <br><br>
     </div>
+    <span class="text-danger">@error('email'){{$message}}@enderror</span>
 
     <div class="form-group">
     <label for="password">Password</label><br>
     <input type="password" placeholder="Enter Password" name=password value="{{old('password')}}">
-    <span class="text-danger">@error('password'){{$message}}@enderror</span>
+    
     <br><br>
     </div>
-
+    <span class="text-danger">@error('password'){{$message}}@enderror</span>
+    
     <div class="form-group">
         <button class="btn btn-block btn-primary" type="submit">login</button>
     
